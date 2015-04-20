@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "project.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>Amanda Magic - Custom Order</title>
+<!-- #EndEditable -->
+<link href="project.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="#top">
+
+<div id="nav" style="width:960px; z-index:5; margin-left:auto; margin-right:auto; background-color:#800000">
+<table class="bannerTableBorder" style="width: 100%;">
+	<tr>
+		<td><a href="home.html"><img alt="Logo" src="Images/logo.jpg" height="80" width="195" /></a></td>
+		<td style="padding-left:15px; padding-bottom:10px">
+			<ul>
+				<li><a href="home.html" style="border-right:1px gray solid">HOME</a></li>
+				<li><a href="about.html" style="border-right:1px gray solid">ABOUT US</a>
+					<ul style="font-family:Calibri; font-size:medium">
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul></li>
+				<li><a href="cheesecake.html" style="border-right:1px gray solid">CHEESECAKES</a>
+					<ul style="font-family:Calibri; font-size:medium">
+						<li><a href="classic_main.html">Classic</a></li>
+						<li><a href="specialty_main.html">Specialty</a></li>
+						<li><a href="chocolate_main.html">Chocolate</a></li>
+						<li><a href="whitechocolate_main.html">White Chocolate</a></li>
+					</ul></li>
+				<li><a href="order.html" style="border-right:1px gray solid">ORDER NOW</a></li>
+				<li><a href="custom.html">CUSTOM ORDER</a></li>
+
+
+			</ul>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="content" style="width: 960px; z-index: 4; margin-left:auto; margin-right:auto;">
+<!-- #BeginEditable "content" -->
+<script type="text/javascript">
+	function clearForm(){
+		document.getElementById("hiddenText1").style.display ="none";
+		document.getElementById("hiddenText2").style.display ="none";
+		document.getElementById("createButton1").style.display ="inline";
+        document.getElementById("createButton2").style.display ="inline";
+        document.getElementById("removeButton1").style.display ="inline";
+        document.getElementById("removeButton2").style.display ="inline";
+
+	}
+
+    function create1(){
+         document.getElementById("hiddenText1").style.display ="block";
+         document.getElementById("createButton1").style.display ="none";
+
+	}
+	
+	function remove1(){
+		 document.getElementById("hiddenText1").style.display ="none";
+         document.getElementById("createButton1").style.display ="inline";
+
+		var w = document.getElementById("hiddenText1").getElementsByTagName('input'); 
+	      for(var i = 0; i < w.length; i++){ 
+	        if(w[i].type=='checkbox'){ 
+	          w[i].checked = false; 
+	        }
+	      }
+	      
+	      var w = document.getElementById("hiddenText1").getElementsByTagName('input'); 
+	      for(var i = 0; i < w.length; i++){ 
+	        if(w[i].type=='radio'){ 
+	          w[i].checked = false; 
+	        }
+	      }
+	      
+	      document.getElementById("text2").value ="";
+	      
+	}
+	
+	function create2(){
+         document.getElementById("hiddenText2").style.display ="block";
+         document.getElementById("createButton2").style.display ="none";
+         document.getElementById("removeButton1").style.display ="none";
+
+	}
+	
+	function remove2(){
+		 document.getElementById("hiddenText2").style.display ="none";
+         document.getElementById("createButton2").style.display ="inline";
+         document.getElementById("removeButton1").style.display ="inline";
+
+
+		var w = document.getElementById("hiddenText2").getElementsByTagName('input'); 
+	      for(var i = 0; i < w.length; i++){ 
+	        if(w[i].type=='checkbox'){ 
+	          w[i].checked = false; 
+	        }
+	      }
+	      
+	      var w = document.getElementById("hiddenText2").getElementsByTagName('input'); 
+	      for(var i = 0; i < w.length; i++){ 
+	        if(w[i].type=='radio'){ 
+	          w[i].checked = false; 
+	        }
+	      }
+	      
+	      document.getElementById("text3").value ="";
+	}
+
+</script>
+
+
+<p style="margin-left:10px; font-size:small"><a href="home.html" style="color:black">Home</a> > <a href="#" style="color:black">Custom Order</a></p>
+
+<p style="margin-left:10px; font-family:'Copperplate Gothic Light'; font-size:x-large"><b>CUSTOM ORDER FORM</b></p>
+
+<form method="post" action="mailto:AmandaMagic@gmail.com">
+<p class="pStyle"><b>CUSTOMER INFORMATION</b></p>
+			
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 175px"><b>First Name:</b></td>
+			<td>
+			<input name="txtFirstName" size="25" tabindex="1" type="text" />&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 175px"><b>Last Name:</b></td>
+			<td>
+			<input name="txtLastName" size="25" tabindex="2" type="text" />&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 175px"><b>E-mail:</b></td>
+			<td>
+			<input name="txtEmail" type="text" size="50" tabindex="3" /></td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 175px"><b>Phone:</b></td>
+			<td><input name="txtPhone" size="15" tabindex="3.5" type="text" />&nbsp;</td>
+		</tr>
+
+	</table>
+
+<p class="pStyle"><b>DELIVERY / PICKUP INFORMATION</b></p>
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 237px"><b>Date of delivery / pickup:</b></td>
+			<td>
+			<input name="txtDate" size="25" tabindex="4" type="text" />&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 237px"><b>Time of delivery / pickup:</b></td>
+			<td>
+			<input name="txtTime" size="25" tabindex="5" type="text" />&nbsp;</td>
+		</tr>
+
+	</table>
+	<br/><br/>
+	<table style="width: 100%" cellspacing="0">
+		<tr>
+			<td colspan="2" style="text-align:right; font-size:x-large; padding-right:150px; padding-bottom:25px; border-right:1px black solid"><b>DELIVERY</b></td>
+			<td colspan="2" style="text-align:left; font-size:x-large; padding-left:150px; padding-bottom:25px;"><b>PICKUP</b></td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 125px"><b>Address:</b></td>
+			<td style="border-right:1px black solid; width: 350px; vertical-align:top">
+			<input name="txtAddress" size="50" tabindex="6" type="text" />&nbsp;</td>
+			<td class="topAlign" style="width: 125px"><b>Pickup Location:</b></td>
+			<td><input name="rbtnPickup" type="radio" tabindex="10" />TTC Finch Station (Yonge & Finch)<br/><input name="rbtnPickup" type="radio" />Square One Shopping Centre (Mississauga)</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width: 125px"><b>City:</b></td>
+			<td style="border-right:1px black solid; width: 350px; padding-left:3px">
+			<select name="cboCity" tabindex="7" style="width:125px"> 
+			<option></option>
+				<option>Markham</option>
+				<option>Mississauga</option>
+				<option>North York</option>
+				<option>Richmond Hill</option>
+				<option>Scarborough</option>
+				<option>Toronto</option>
+			</select></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+	</table>
+<p class="pStyle"><b>CUSTOMIZE YOUR CHEESECAKE!</b></p>
+
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 175px"><b>Quantity:</b></td>
+			<td><input name="rbtnQty1" type="radio" tabindex="11" />Half Dozen (6)<span style="padding-left:25px">
+			<input name="rbtnQty1" type="radio" />Full Dozen (12)</span></td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:175px; padding-top:20px"><b>Crust:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCrust1" type="radio"  tabindex="12"/>Graham Cracker<span style="padding-left:15px">
+			<input name="rbtnCrust1" type="radio" />Chocolate Cookie Crumb</span>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:175px; padding-top:20px"><b>Cheesecake:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCheesecake1" type="radio"  tabindex="14"/>Classic Plain<span style="padding-left:15px">
+			<input name="rbtnCheesecake1" type="radio" />Chocolate</span><span style="padding-left:15px">
+			<input name="rbtnCheesecake1" type="radio" />White Chocolate</span>
+			</td>
+		</tr>
+		</table>
+		<table style="width:100%">
+		<tr>
+			<td class="topAlign" style="width:243px"><b>Options:</b></td>
+			<td style="vertical-align:top">
+			<input name="chkApple1" type="checkbox" tabindex="14.5" />Apples<span style="padding-left:15px">
+			<input name="chkBlueberrySwirl1" type="checkbox" tabindex="15" />Blueberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCaramelSwirl1" type="checkbox" tabindex="16" />Caramel Swirl</span><span style="padding-left:15px">
+			<input name="chkChocolateSwirl1" type="checkbox" tabindex="17" />Chocolate Swirl</span><span style="padding-left:15px">
+			<input name="chkRaspberrySwirl1" type="checkbox" tabindex="18" />Raspberry Swirl</span><span style="padding-left:15px"><br/>
+			<input name="chkStrawberrySwirl1" type="checkbox" tabindex="19" />Strawberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCookieCrumb1" type="checkbox" tabindex="20" />Chocolate Cookie Crumbs</span>
+			
+			</td>
+		</tr>
+		</table>
+	<table>
+		<tr>
+			<td class="topAlign" style="width:175px; padding-top:20px"><b>Topping:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="chkStrawberrySauce1" type="checkbox" tabindex="21" />Strawberry Sauce<span style="padding-left:15px">
+			<input name="chkBlueberrySauce1" type="checkbox" tabindex="22" />Blueberry Sauce</span><span style="padding-left:15px">
+			<input name="chkRaspberrySauce1" type="checkbox" tabindex="23" />Raspberry Sauce</span><span style="padding-left:15px">
+			<input name="chkCaramelGlaze1" type="checkbox" tabindex="24" />Caramel Glaze</span><span style="padding-left:15px">
+			<input name="chkChocolateGlaze1" type="checkbox" tabindex="25" />Chocolate Glaze</span><span style="padding-left:15px"><br/>
+			<input name="chkFreshStrawberry1" type="checkbox" tabindex="26" />Fresh Strawberries</span><span style="padding-left:15px">
+			<input name="chkFreshBlueberry1" type="checkbox" tabindex="27" />Fresh Blueberries</span><span style="padding-left:15px">
+			<input name="chkFreshRaspberry1" type="checkbox" tabindex="28" />Fresh Raspberries</span><span style="padding-left:15px">
+			<input name="chkWhippedCream1" type="checkbox" tabindex="29" />Whipped Cream</span><span style="padding-left:15px">
+			<input name="chkSalt1" type="checkbox" tabindex="30" />Salt</span><span style="padding-left:15px"><br/>
+			<input name="chkChocolateShaving1" tabindex="31" type="checkbox" />Chocolate Shavings</span><span style="padding-left:15px">
+			<input name="chkWhiteChocolateDecoration1" type="checkbox" tabindex="32" />White Chocolate Decoration</span><span style="padding-left:15px">
+			<input name="chkSandwichCookie1" type="checkbox" tabindex="33" />Sandwich Cookie</span>
+	
+			</td>
+		</tr>
+		
+
+	</table>
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 235px; padding-top:20px"><b>Other Comments:</b></td>
+			<td>
+			<textarea id="text1" cols="50" name="txtOther1" rows="5" tabindex="34" style="margin-top:20px"></textarea></td>
+		</tr>
+	</table>
+
+
+<table style="width:100%">
+		<tr>
+			<td style="text-align:center; padding-top:25px;">
+				<input id="createButton1" name="createButton1" type="button" value="New Cheesecake" tabindex="35" onclick="create1()" style="width:100px; height: 45px; white-space:normal" />
+			</td>
+		</tr>
+	</table>
+
+<fieldset id="hiddenText1" name="grpCustom2" style="display:none">
+
+<hr style="margin-left:30px; margin-right:30px; border-style:none; height:2px; background-color:#800000; margin-bottom:25px;" />
+
+<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 160px"><b>Quantity:</b></td>
+			<td><input name="rbtnQty2" type="radio" tabindex="36" />Half Dozen (6)<span style="padding-left:25px">
+			<input name="rbtnQty2" type="radio" />Full Dozen (12)</span></td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Crust:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCrust2" type="radio" tabindex="37" />Graham Cracker<span style="padding-left:15px">
+			<input name="rbtnCrust2" type="radio" />Chocolate Cookie Crumb</span>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Cheesecake:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCheesecake2" type="radio" tabindex="38" />Classic Plain<span style="padding-left:15px">
+			<input name="rbtnCheesecake2" type="radio" />Chocolate</span><span style="padding-left:15px">
+			<input name="rbtnCheesecake2" type="radio" />White Chocolate</span>
+			</td>
+		</tr>
+		</table>
+		<table style="width:100%">
+		<tr>
+			<td class="topAlign" style="width:228px"><b>Options:</b></td>
+			<td style="vertical-align:top">
+			<input name="chkApple2" type="checkbox" tabindex="39" />Apples<span style="padding-left:15px">
+			<input name="chkBlueberrySwirl2" type="checkbox" tabindex="40" />Blueberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCaramelSwirl2" type="checkbox" tabindex="41" />Caramel Swirl</span><span style="padding-left:15px">
+			<input name="chkChocolateSwirl2" type="checkbox" tabindex="42" />Chocolate Swirl</span><span style="padding-left:15px">
+			<input name="chkRaspberrySwirl2" type="checkbox" tabindex="43" />Raspberry Swirl</span><span style="padding-left:15px"><br/>
+			<input name="chkStrawberrySwirl2" type="checkbox" tabindex="44" />Strawberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCookieCrumb2" type="checkbox" tabindex="45" />Chocolate Cookie Crumbs</span>
+			
+			</td>
+		</tr>
+		</table>
+	<table>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Topping:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="chkStrawberrySauce2" type="checkbox" tabindex="46" />Strawberry Sauce<span style="padding-left:15px">
+			<input name="chkBlueberrySauce2" type="checkbox" tabindex="47" />Blueberry Sauce</span><span style="padding-left:15px">
+			<input name="chkRaspberrySauce2" type="checkbox" tabindex="48" />Raspberry Sauce</span><span style="padding-left:15px">
+			<input name="chkCaramelGlaze2" type="checkbox" tabindex="49" />Caramel Glaze</span><span style="padding-left:15px">
+			<input name="chkChocolateGlaze2" type="checkbox" tabindex="50" />Chocolate Glaze</span><span style="padding-left:15px"><br/>
+			<input name="chkFreshStrawberry2" type="checkbox" tabindex="51" />Fresh Strawberries</span><span style="padding-left:15px">
+			<input name="chkFreshBlueberry2" type="checkbox" tabindex="52" />Fresh Blueberries</span><span style="padding-left:15px">
+			<input name="chkFreshRaspberry2" type="checkbox" tabindex="53" />Fresh Raspberries</span><span style="padding-left:15px">
+			<input name="chkWhippedCream2" type="checkbox" tabindex="54" />Whipped Cream</span><span style="padding-left:15px">
+			<input name="chkSalt2" type="checkbox" tabindex="55" />Salt</span><span style="padding-left:15px"><br/>
+			<input name="chkChocolateShaving2" type="checkbox" tabindex="56" />Chocolate Shavings</span><span style="padding-left:15px">
+			<input name="chkWhiteChocolateDecoration2" type="checkbox" tabindex="57" />White Chocolate Decoration</span><span style="padding-left:15px">
+			<input name="chkSandwichCookie2" type="checkbox" tabindex="58" />Sandwich Cookie</span>
+	
+			</td>
+		</tr>
+		
+
+	</table>
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 220px; padding-top:20px"><b>Other Comments:</b></td>
+			<td>
+			<textarea id="text2" cols="50" name="txtOther2" rows="5" tabindex="59" style="margin-top:20px"></textarea></td>
+		</tr>
+	</table>
+
+
+<table style="width:100%">
+		<tr>
+			<td style="text-align:right; padding-top:25px; padding-right:10px; width: 450px;">
+				<input id="createButton2" name="createButton2" type="button" value="New Cheesecake" tabindex="60" onclick="create2()" style=" width:100px; height: 45px; white-space:normal" />
+			</td>
+			<td style="padding-top:25px; padding-left:10px; width:450px">
+				<input id="removeButton1" name="removeButton1" type="button" value="Remove Cheesecake" tabindex="61" onclick="remove1()" style="width:100px; height: 45px; white-space:normal" />
+			</td>
+		</tr>
+	</table>
+
+</fieldset>
+
+<fieldset id="hiddenText2" name="grpCustom3" style="display:none">
+
+<hr style="margin-left:30px; margin-right:30px; border-style:none; height:2px; background-color:#800000; margin-bottom:25px;" />
+
+<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 160px"><b>Quantity:</b></td>
+			<td><input name="rbtnQty3" type="radio" tabindex="62" />Half Dozen (6)<span style="padding-left:25px">
+			<input name="rbtnQty3" type="radio" />Full Dozen (12)</span></td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Crust:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCrust3" type="radio" tabindex="63" />Graham Cracker<span style="padding-left:15px">
+			<input name="rbtnCrust3" type="radio" />Chocolate Cookie Crumb</span>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Cheesecake:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="rbtnCheesecake3" type="radio" tabindex="64" />Classic Plain<span style="padding-left:15px">
+			<input name="rbtnCheesecake3" type="radio" />Chocolate</span><span style="padding-left:15px">
+			<input name="rbtnCheesecake3" type="radio" />White Chocolate</span>
+			</td>
+		</tr>
+		</table>
+		<table style="width:100%">
+		<tr>
+			<td class="topAlign" style="width:228px"><b>Options:</b></td>
+			<td style="vertical-align:top">
+			<input name="chkApple3" type="checkbox" tabindex="65" />Apples<span style="padding-left:15px">
+			<input name="chkBlueberrySwirl3" type="checkbox" tabindex="66" />Blueberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCaramelSwirl3" type="checkbox" tabindex="67" />Caramel Swirl</span><span style="padding-left:15px">
+			<input name="chkChocolateSwirl3" type="checkbox" tabindex="68" />Chocolate Swirl</span><span style="padding-left:15px">
+			<input name="chkRaspberrySwirl3" type="checkbox" tabindex="69" />Raspberry Swirl</span><span style="padding-left:15px"><br/>
+			<input name="chkStrawberrySwirl3" type="checkbox" tabindex="70" />Strawberry Swirl</span><span style="padding-left:15px">
+			<input name="chkCookieCrumb3" type="checkbox" tabindex="71" />Chocolate Cookie Crumbs</span>
+			
+			</td>
+		</tr>
+		</table>
+	<table>
+		<tr>
+			<td class="topAlign" style="width:160px; padding-top:20px"><b>Topping:</b></td>
+			<td style="vertical-align:top; padding-top:20px">
+			<input name="chkStrawberrySauce3" type="checkbox" tabindex="72" />Strawberry Sauce<span style="padding-left:15px">
+			<input name="chkBlueberrySauce3" type="checkbox" tabindex="73" />Blueberry Sauce</span><span style="padding-left:15px">
+			<input name="chkRaspberrySauce3" type="checkbox" tabindex="74" />Raspberry Sauce</span><span style="padding-left:15px">
+			<input name="chkCaramelGlaze3" type="checkbox" tabindex="75" />Caramel Glaze</span><span style="padding-left:15px">
+			<input name="chkChocolateGlaze3" type="checkbox" tabindex="76" />Chocolate Glaze</span><span style="padding-left:15px"><br/>
+			<input name="chkFreshStrawberry3" type="checkbox" tabindex="77" />Fresh Strawberries</span><span style="padding-left:15px">
+			<input name="chkFreshBlueberry3" type="checkbox" tabindex="78" />Fresh Blueberries</span><span style="padding-left:15px">
+			<input name="chkFreshRaspberry3" type="checkbox" tabindex="79" />Fresh Raspberries</span><span style="padding-left:15px">
+			<input name="chkWhippedCream3" type="checkbox" tabindex="80" />Whipped Cream</span><span style="padding-left:15px">
+			<input name="chkSalt3" type="checkbox" tabindex="81" />Salt</span><span style="padding-left:15px"><br/>
+			<input name="chkChocolateShaving3" type="checkbox" tabindex="82" />Chocolate Shavings</span><span style="padding-left:15px">
+			<input name="chkWhiteChocolateDecoration3" type="checkbox" tabindex="83" />White Chocolate Decoration</span><span style="padding-left:15px">
+			<input name="chkSandwichCookie3" type="checkbox" tabindex="84" />Sandwich Cookie</span>
+	
+			</td>
+		</tr>
+		
+
+	</table>
+	<table style="width: 100%">
+		<tr>
+			<td class="topAlign" style="width: 220px; padding-top:20px"><b>Other Comments:</b></td>
+			<td>
+			<textarea id="text3" cols="50" name="txtOther3" rows="5" tabindex="85" style="margin-top:20px"></textarea></td>
+		</tr>
+	</table>
+
+
+<table style="width:100%">
+		<tr>
+			<td style="text-align:center; padding-top:25px;">
+				<input id="removeButton2" name="removeButton2" type="button" value="Remove Cheesecake" tabindex="86" onclick="remove2()" style="width:100px; height: 45px; white-space:normal" />
+			</td>
+		</tr>
+	</table>
+
+
+</fieldset>
+
+
+<br/><br/><br/><br/>
+<table style="width:100%">
+		<tr>
+			<td style="text-align:right; padding-top:10px; padding-right:10px; width: 450px;">
+				<input name="btnClear" type="reset" value="Clear Form" onclick="clearForm()" tabindex="99" style="width: 100px; height: 35px" /></td>
+			<td style="padding-top:10px; padding-left:10px; width:450px">
+				<input name="btnSubmit" type="submit" value="Place Order" tabindex="100" style="width: 100px; height: 35px" /></td>
+		</tr>
+	</table>
+
+	
+</form>
+<!-- #EndEditable -->
+</div>
+
+<div id="copyright" style="width: 960px; z-index: 3; margin-left:auto; margin-right:auto;">
+<br/><br/><br/>
+<center><p style="font-family:calibri; font-size:small">
+   <a href = "home.html" style = "text-decoration:none; color:black">Home</a> |
+   <a href = "cheesecake.html" style = "text-decoration:none; color:black">Cheesecakes</a> |  
+   <a href = "faq.html" style = "text-decoration:none; color:black">FAQ</a> |
+   <a href = "contact.html" style = "text-decoration:none; color:black">Contact Us</a> |
+   <a href = "order.html" style = "text-decoration:none; color:black">Order Now</a> |
+   <a href = "custom.html" style = "text-decoration:none; color:black">Custom Order</a> |
+   <a href = "sitemap.html" style = "text-decoration:none; color:black">Site Map</a>
+</p></center>
+
+<h6>Copyright &copy; Wendall Hsu - Student #: 300739743
+<br/>COMP213 - Web Interface Design - Winter 2014</h6>
+</div>
+
+
+
+</body>
+<!--Wendall Hsu - Student #: 300739743-->
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,252 @@
+﻿topping:before {content: "Toppings: "; font-weight:bold;}
+cheesecake:before {content: "Cheesecake: "; font-weight:bold;}
+crust:before {content: "Crust: "; font-weight:bold;}
+
+section1{
+	border-top:2px black solid;
+	border-bottom:3px black solid;
+	float:left;
+	width:225px;
+	margin-left:5px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	font-size:14px;
+}
+
+section2{
+	border-top:2px black solid;
+	border-bottom:3px black solid;
+	float:left;
+	width:225px;
+	margin-left:5px;
+	margin-top:10px;
+	margin-right:5px;
+	margin-bottom:10px;
+	font-size:14px;
+}
+
+section3{
+	border-top:2px black solid;
+	border-bottom:3px black solid;
+	float:left;
+	width:225px;
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:14px;
+}
+
+section1 table td{
+	border-top:1px black solid;
+
+}
+
+section2 table td{
+	border-top:1px black solid;
+
+}
+
+section3 table td{
+	border-top:1px black solid;
+
+}
+
+.bold{
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-left:none;
+	border-right:none;
+}
+
+.italic{
+	font-style:italic;
+	padding-left:25px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-left:none;
+	border-right:none;
+
+}
+
+.valueColumn{
+	text-align:right;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-right:10px;
+	border-right:none;
+	border-left:none;
+
+}
+
+.bannerTableBorder {
+	border-style: solid;
+	border-width: 1px;
+	font-size:12px; 
+	font-weight:bold;
+	font-family:'Copperplate Gothic Light';
+	
+}
+
+.topAlign{
+	vertical-align:top;
+	text-align:right;
+}
+
+.pStyle{
+	background-color:#800000;
+	padding-left:25px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left:25px;
+	margin-right:25px;
+	color:white;
+	
+}
+
+body{
+	font-family:Calibri;
+	background-color:#FFCC99;	
+}
+
+a{
+	color:white;
+	text-decoration:none;
+	border:none;
+}
+
+p a{
+	color:black;
+	text-decoration:none;
+	border:none;
+
+}
+
+p a:hover{
+	color:gray;
+}
+
+hr{
+	margin-right:25px;
+	border-style:none;
+	height:2px;
+	background-color:#FF9933;
+}
+
+fieldset{
+	border:none;
+}
+
+#nav ul{
+    padding: 0;
+    list-style: none;
+    
+}
+
+#nav ul li{
+    float: left;
+    text-align: center;
+    width:145px; 
+
+}
+
+#nav ul li a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+    background: #f2f2f2;
+    text-decoration: none;
+ 
+}
+
+#nav ul li a:hover{
+    color: #fff;
+    background: #939393;
+    
+}
+
+#nav ul li table{
+	display: none;
+    position: absolute;
+    background: #f2f2f2;
+    z-index:100;
+
+}
+
+#nav ul li:hover table{
+	display:block;
+}
+   
+#nav ul li ul{
+    display: none;
+    position: absolute;
+    z-index:100;
+}
+
+#nav ul li ul li{
+	text-align:center;
+    width:145px;
+}
+
+#nav ul li:hover ul{
+	width:100px;
+    display:block; /* display the dropdown */
+}
+
+#side ul{
+    padding: 0;
+    list-style: none;
+}
+
+#side ul li a:active{
+    color: blue;
+}
+
+#side ul li a:hover{
+    color: red;
+}
+
+#copyright h6{
+	text-align:center;
+}
+
+#contact tr td a:link{
+	color:blue;
+	text-decoration:underline;
+}
+
+#contact tr td a:active{
+	color:red;
+	text-decoration:underline;
+}
+
+#contact tr td a:visited{
+	color:purple;
+	text-decoration:underline;
+}
+
+#sitemap{
+	margin-top:10px; 
+	margin-left:25px; 
+	font-family:Calibri; 
+	font-size:medium
+}
+
+#sitemap li{
+	margin-top:5px;
+}
+
+#sitemap li a{
+	color:blue;
+	text-decoration:underline;
+}
+
+#sitemap li a:active{
+	color:red;
+}
+
+#sitemap li a:visited{
+	color:purple;
+}
